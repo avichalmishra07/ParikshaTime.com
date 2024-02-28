@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up To Pariksha Time </title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+   <header>
+    <a href="index.html"><img src="images\parikshatimewhite.png" alt="Exam Portal Logo"></a>
+    <div class="header-content">
+        <h1 align="center">PARIKSHA TIME</h1>
+		<p align="center">Practice Makes A Man Perfect</p>
+        
+    </div>
+    <a href="login.html" class="login-button">LOG IN</a>
+    <a href="signup.html" class="signup-button">SIGN UP</a>
+</header>
+
+    <nav>
+        <ul>
+		    <li><a href="index.html">HOME</a></li>
+            <li><a href="About Us.html">ABOUT US</a></li>
+            <li><a href="latestjobs.html">LATEST JOBS</a></li>
+			<li><a href="courses.html">COURSES</a></li>
+			<li><a href="Practice.html">PRACTICE</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+ 
+
+
+
+  <main>
+        <h1>Sign Up</h1>
+
+        <form id="signupForm" action="signup.php">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <!-- Sign up with Google and Facebook buttons -->
+        <div class="social-signup">
+            <button class="google-signup" onclick="signInWithGoogle()">Sign up with Google</button>
+            <button class="facebook-signup" onclick="signInWithFacebook()">Sign up with Facebook</button>
+        </div>
+    </main>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match. Please try again.");
+                return;
+            }
+
+            // Implement registration logic here
+            // For example, send a request to your backend to register the user
+
+            // If registration is successful, redirect to the desired page
+            // For example, window.location.href = 'dashboard.html';
+        });
+
+        function signInWithGoogle() {
+            // Implement Google Sign In logic here
+        }
+
+        function signInWithFacebook() {
+            // Implement Facebook Sign In logic here
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="footer-container">
+        
+        <div class="footer-links">
+            <ul>
+                 <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+                <li><a href="termsandcondition.html">Terms And Condition</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+		<div class="footer-logo">
+		<img src="images\parikshatimewhite.png">
+		</div>
+        <div class="footer-social">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images\facebook-icon.png" alt="Facebook">
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images\twitter-icon.png" alt="Twitter">
+                        <span>Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images\linkedin-icon.png" alt="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images\instagram-icon.png" alt="Instagram">
+                        <span>Instagram</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-info">
+        &copy; 2023 Pariksha Time All rights reserved | Designed By Pariksha Time
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

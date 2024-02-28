@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pariksha Time | Latest Jobs </title>
+    <link rel="stylesheet" href="latestjobs.css">
+</head>
+<body>
+   <header>
+    <a href="index.html"><img src="images\parikshatimewhite.png" alt="Exam Portal Logo"></a>
+    <div class="header-content">
+        <h1 align="center">PARIKSHA TIME</h1>
+		<p align="center">Practice Makes A Man Perfect</p>
+        
+    </div>
+    <a href="login.html" class="login-button">LOG IN</a>
+    <a href="signup.html" class="signup-button">SIGN UP</a>
+</header>
+
+    <nav>
+        <ul>
+		    <li><a href="index.html">HOME</a></li>
+            <li><a href="About Us.html">ABOUT US</a></li>
+            <li><a href="latestjobs.html">LATEST JOBS</a></li>
+			<li><a href="courses.html">COURSES</a></li>
+			<li><a href="practice.html">PRACTICE</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+ 
+ 
+ 
+   
+     <main>
+        <div class="search-container">
+            <input type="text" id="jobSearch" placeholder="Search by Job Title">
+            <button onclick="searchJobs()">Search</button>
+        </div>
+
+        <h1>Latest Government Jobs</h1>
+
+        <section class="job" data-title="Job Title 1" data-department="Department of Example">
+            <h2>Job Title 1</h2>
+            <p>Department: Department of Example</p>
+            <p>Location: Example City</p>
+            <p>Posted Date: September 15, 2023</p>
+            <a href="#">Apply Now</a>
+        </section>
+
+        <section class="job" data-title="Job Title 2" data-department="Department of Sample">
+            <h2>Job Title 2</h2>
+            <p>Department: Department of Sample</p>
+            <p>Location: Sample Town</p>
+            <p>Posted Date: September 16, 2023</p>
+            <a href="#">Apply Now</a>
+        </section>
+
+        <!-- Add more job listings as needed -->
+
+    </main>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <footer>
+    <div class="footer-container">
+        
+        <div class="footer-links">
+            <ul>
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+                <li><a href="termsandcondition.html">Terms And Condition</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+		<div class="footer-logo">
+		<img src="images\parikshatimewhite.png">
+		</div>
+        <div class="footer-social">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images\facebook-icon.png" alt="Facebook">
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images\twitter-icon.png" alt="Twitter">
+                        <span>Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images\linkedin-icon.png" alt="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images\instagram-icon.png" alt="Instagram">
+                        <span>Instagram</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-info">
+        &copy; 2023 Pariksha Time All rights reserved | Designed By Pariksha Time
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+        function searchJobs() {
+            const searchTerm = document.getElementById('jobSearch').value.toLowerCase();
+            const jobs = document.querySelectorAll('.job');
+
+            jobs.forEach(job => {
+                const jobTitle = job.dataset.title.toLowerCase();
+
+                if (jobTitle.includes(searchTerm)) {
+                    job.style.display = 'block';
+                } else {
+                    job.style.display = 'none';
+                }
+            });
+        }
+
+        document.getElementById('jobSearch').addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                searchJobs();
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+</body>
+</html>

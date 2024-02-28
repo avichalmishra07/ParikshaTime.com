@@ -1,0 +1,369 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Set a background color and text color for the entire page */
+body {
+    background-color: #f2f2f2;
+    color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+	width:100%;
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between; /* Add space between logo and content */
+    align-items: center; /* Vertically center elements */
+}
+/* Style the logo */
+header img {
+    max-width: 150px; /* Adjust the width as needed */
+    height: auto;
+    display: block;
+}
+
+/* Style the header content (heading and paragraph) */
+.header-content {
+    flex-grow: 1; /* Allow content to grow and fill space */
+    text-align: left;
+    padding-left: 20px; /* Add spacing to the left of content */
+}
+
+.header-content h1 {
+    font-size: 58px;
+	font-family:Times New Roman;
+    margin-bottom:-25px;
+}
+
+.header-content p {
+    font-size: 20px;
+	letter-spacing: 7px;
+}
+
+/* Style the login button */
+.login-button, .signup-button {
+    background: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+	border:3px solid white;
+	margin:10px;
+}
+
+.signup-button {
+    background-color: transparent;
+    color: #fff;
+}
+
+.login-button:hover, .signup-button:hover {
+    background-color: transparent;
+	color:#FFA500;
+	border:3px solid #FFA500;
+	
+}
+
+
+/* Style the navigation menu */
+nav {
+    background-color: #333;
+	width:100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav li {
+    margin: 0 auto;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+nav a:hover {
+    color: #FFA500;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+
+/* Your existing CSS styles */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style the main content section */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+	margin-top:20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.practice-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.practice-list li {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.practice-list h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.practice-list p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.practice-list a {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: auto;
+}
+
+.practice-list a:hover {
+    background-color: #0056b3;
+}
+
+/* Add more styles as needed */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style the footer container */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+	margin-top:20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+	
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Style the footer links */
+.footer-links ul {
+    list-style: none;
+    display: flex;
+	 flex-direction: column;
+	 	margin-bottom:10px;
+}
+
+.footer-links li {
+    margin-right: 20px;
+	margin-bottom:10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #6AFB92; /* Change to your desired hover color */
+}
+
+/* Style the footer social media icons and names */
+.footer-social ul {
+    list-style: none;
+    display: flex;
+	 flex-direction: column;
+}
+
+.footer-social li {
+    margin-right: 15px;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+	margin-bottom:10px;
+    transition: color 0.3s;
+}
+
+.footer-social a img {
+    width: 30px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 5px; /* Space between icon and name */
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.footer-social a:hover {
+    color: #00FF7F; /* Change to your desired hover color */
+}
+
+/* Style the social media names */
+.footer-social span {
+    font-size: 16px; /* Adjust the font size as needed */
+    font-weight: bold;
+}
+
+
+.footer-social a img:hover {
+    opacity: 5;
+}
+
+
+/* Style the footer copyright text */
+.footer-info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-logo img {
+	  text-align:center;
+	  width:200px;
+	  height:auto;
+}

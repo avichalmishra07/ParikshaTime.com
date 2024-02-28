@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In To Pariksha Time </title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+   <header>
+    <a href="index.html"><img src="images\parikshatimewhite.png" alt="Exam Portal Logo"></a>
+    <div class="header-content">
+        <h1 align="center">PARIKSHA TIME</h1>
+		<p align="center">Practice Makes A Man Perfect</p>
+        
+    </div>
+    <a href="login.html" class="login-button">LOG IN</a>
+    <a href="signup.html" class="signup-button">SIGN UP</a>
+</header>
+
+    <nav>
+        <ul>
+		    <li><a href="index.html">HOME</a></li>
+            <li><a href="About Us.html">ABOUT US</a></li>
+            <li><a href="latestjobs.html">LATEST JOBS</a></li>
+			<li><a href="courses.html">COURSES</a></li>
+			<li><a href="Practice.html">PRACTICE</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div class="form">
+
+  <form action="">
+        <!-- Headings for the form -->
+        <div class="headingsContainer">
+            <h3>Sign in</h3>
+            <p>Sign in with your username and password</p>
+        </div>
+
+        <!-- Main container for all inputs -->
+        <div class="mainContainer">
+            <!-- Username -->
+            <label for="username">Your username</label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+            <br><br>
+
+            <!-- Password -->
+            <label for="pswrd">Your password</label>
+            <input type="password" placeholder="Enter Password" name="pswrd" required>
+
+            <!-- sub container for the checkbox and forgot password link -->
+            <div class="subcontainer">
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <p class="forgotpsd"> <a href="#">Forgot Password?</a></p>
+            </div>
+
+
+            <!-- Submit button -->
+            <button type="submit">Login</button>
+
+            <!-- Sign up link -->
+            <p class="register">Not a member?  <a href="signup.html">Register here!</a></p>
+
+        </div>
+
+    </form>
+    </div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Implement authentication logic here
+            // For example, send a request to your backend to verify the credentials
+
+            // If authentication is successful, redirect to the desired page
+            // For example, window.location.href = 'dashboard.html';
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="footer-container">
+        
+        <div class="footer-links">
+            <ul>
+                 <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+                <li><a href="termsandcondition.html">Terms And Condition</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+		<div class="footer-logo">
+		<img src="images\parikshatimewhite.png">
+		</div>
+        <div class="footer-social">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images\facebook-icon.png" alt="Facebook">
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images\twitter-icon.png" alt="Twitter">
+                        <span>Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images\linkedin-icon.png" alt="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images\instagram-icon.png" alt="Instagram">
+                        <span>Instagram</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-info">
+        &copy; 2023 Pariksha Time All rights reserved | Designed By Pariksha Time
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

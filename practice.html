@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pariksha Time | Practice</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+   <header>
+    <a href="index.html"><img src="images\parikshatimewhite.png" alt="Exam Portal Logo"></a>
+    <div class="header-content">
+        <h1 align="center">PARIKSHA TIME</h1>
+		<p align="center">Practice Makes A Man Perfect</p>
+        
+    </div>
+    <a href="login.html" class="login-button">LOG IN</a>
+    <a href="signup.html" class="signup-button">SIGN UP</a>
+</header>
+
+    <nav>
+        <ul>
+		    <li><a href="index.html">HOME</a></li>
+            <li><a href="About Us.html">ABOUT US</a></li>
+            <li><a href="latestjobs.html">LATEST JOBS</a></li>
+			<li><a href="courses.html">COURSES</a></li>
+			<li><a href="Practice.html">PRACTICE</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   <main>
+        <div class="search-container">
+            <input type="text" id="examSearch" placeholder="Search for Exams">
+            <button onclick="searchExams()">Search</button>
+        </div>
+
+        <section class="exam-detail" data-name="CCC Exam" data-description="Exam Description 1">
+            <h1>CCC Exam</h1>
+            <p>Exam Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Duration: 90 Min</p>
+            <p>Total Questions: 100</p>
+            <a href="CCC Exam.html" class="take-test-button">Take Test</a>
+        </section>
+
+        <section class="exam-detail" data-name="SSC CHSL" data-description="Exam Description 2">
+            <h1>SSC CHSL</h1>
+            <p>Exam Description: Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <p>Duration: 60 Min</p>
+            <p>Total Questions: 100</p>
+            <a href="SSC CHSL.html" class="take-test-button">Take Test</a>
+        </section>
+
+        <!-- Add more exam details as needed -->
+
+    </main>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <footer>
+    <div class="footer-container">
+        
+        <div class="footer-links">
+            <ul>
+                 <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+                <li><a href="termsandcondition.html">Terms And Condition</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+		<div class="footer-logo">
+		<img src="images\parikshatimewhite.png">
+		</div>
+        <div class="footer-social">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images\facebook-icon.png" alt="Facebook">
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images\twitter-icon.png" alt="Twitter">
+                        <span>Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images\linkedin-icon.png" alt="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images\instagram-icon.png" alt="Instagram">
+                        <span>Instagram</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-info">
+        &copy; 2023 Pariksha Time All rights reserved | Designed By Pariksha Time
+    </div>
+</footer>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const examSearch = document.getElementById('examSearch');
+
+            examSearch.addEventListener('keydown', function(event) {
+                if (event.key === 'Enter') {
+                    event.preventDefault(); // Prevents the default behavior (form submission)
+                    searchExams();
+                }
+            });
+        });
+
+        function searchExams() {
+            const searchTerm = document.getElementById('examSearch').value.toLowerCase();
+            const exams = document.querySelectorAll('.exam-detail');
+
+            exams.forEach(exam => {
+                const examName = exam.dataset.name.toLowerCase();
+                const examDescription = exam.dataset.description.toLowerCase();
+
+                if (examName.includes(searchTerm) || examDescription.includes(searchTerm)) {
+                    exam.style.display = 'block';
+                } else {
+                    exam.style.display = 'none';
+                }
+            });
+        }
+    </script>
+ 
+
+</body>
+</html>
